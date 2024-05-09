@@ -1,5 +1,12 @@
+import PageNav from "../components/PageNav";
+
 function Homepage() {
-  return <div>JourneyJotter</div>;
+  return (
+    <div>
+      <PageNav />
+      <h1>JourneyJotter</h1>
+    </div>
+  );
 }
 
 export default Homepage;
