@@ -2,18 +2,8 @@ import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import useCities from "../contexts/useCities";
 import styles from "./City.module.css";
-import Spinner from "./Spinner";
+// import Spinner from "./Spinner";
 import BackButton from "./BackButton";
-
-// import PropTypes from "prop-types";
-// City.propTypes = {
-//   city: PropTypes.shape({
-//     cityName: PropTypes.string,
-//     emoji: PropTypes.string,
-//     date: PropTypes.string,
-//     notes: PropTypes.string,
-//   }),
-// };
 
 const formatDate = (date) =>
   new Intl.DateTimeFormat("en", {
