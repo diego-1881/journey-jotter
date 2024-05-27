@@ -32,13 +32,11 @@ function Map() {
 
   return (
     <div className={styles.mapContainer}>
-      {!geolocationPosition && (
-        <Button type="position" onClick={getPosition}>
-          {isLoadingPosition ? "Loading..." : "Use your position"}
-        </Button>
-      )}
+      {!geolocationPosition && <Button onClick={getPosition}>{isLoadingPosition ? "Loading..." : "Use your position"}</Button>}
 
-      <p>{setMapPosition}</p>
+      <p>
+        {mapPosition[0]}, {mapPosition[1]}
+      </p>
       <MapContainer className={styles.map} center={mapPosition} zoom={7} scrollWheelZoom={true}>
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
