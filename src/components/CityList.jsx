@@ -4,12 +4,6 @@ import CityItem from "./CityItem";
 import Message from "./Message";
 import useCities from "../contexts/useCities";
 
-import PropTypes from "prop-types";
-CityList.propTypes = {
-  cities: PropTypes.array,
-  isLoading: PropTypes.bool,
-};
-
 function CityList() {
   const { cities, isLoading } = useCities();
 

@@ -1,10 +1,5 @@
 import { useNavigate } from "react-router-dom";
 import Button from "./Button";
-import PropTypes from "prop-types";
-Button.propTypes = {
-  type: PropTypes.oneOf(["back", "submit"]),
-  onClick: PropTypes.func,
-};
 
 function BackButton() {
   const navigate = useNavigate();
